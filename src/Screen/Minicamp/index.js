@@ -8,7 +8,12 @@ const Minicamp = () =>{
     const [miniclassList, setMiniclassList] = useState([]);
     useEffect(()=>{
         axios
-        .get(`${BaseUrl}/miniclass`)
+        .get(`https://fazz-course.herokuapp.com/miniclass`,
+        {
+            headers: {
+                'Access-Control-Allow-Origin': true,
+            },
+        }
             .then((res) => {
                 console.log(res.data.data);
                 setMiniclassList(res.data.data);
