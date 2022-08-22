@@ -7,8 +7,9 @@ import {BaseUrl} from "../../component/baseUrl";
 const Minicamp = () =>{
     const [miniclassList, setMiniclassList] = useState([]);
     useEffect(()=>{
+        const url = `https://fazz-course.herokuapp.com/miniclass`
         axios
-        .get(`https://fazz-course.herokuapp.com/miniclass`,
+        .get(`https://cors-anywhere.herokuapp.com/${url}`,
         {
             headers: {
                 'Access-Control-Allow-Origin': "*",
