@@ -14,14 +14,14 @@ const Minicamp = () =>{
             headers: {
                 'Access-Control-Allow-Origin': "*",
             },
-        }
+        })
             .then((res) => {
                 console.log(res.data.data);
                 setMiniclassList(res.data.data);
             })
             .catch((err) => {
-                console.log(err);
-            });
+                console.log(err)
+            })
     },[])
     return(
         <>
