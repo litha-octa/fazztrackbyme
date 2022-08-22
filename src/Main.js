@@ -5,6 +5,8 @@ import Landing from "./Screen/Landing";
 import Login from "./Screen/Login";
 import Register from "./Screen/Register";
 import Minicamp from "./Screen/Minicamp";
+import ClassDetail from "./Screen/ClassDetail";
+import Module from './Screen/Module'
 
 
 class Main extends Component {
@@ -20,6 +22,8 @@ class Main extends Component {
             <Route path="/Login" element={<Login/>} />
             <Route path="/Register" element={<Register/>} />
             <Route path="/Minicamp" element={<Minicamp/>} />
+            <Route path="/Class-Detail" element={<ClassDetail/>} />
+            <Route path="/Module-Belajar" element={<Module/>} />
 
           </Routes>
         </div>

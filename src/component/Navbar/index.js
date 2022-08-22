@@ -32,10 +32,26 @@ const Navbar = () => {
             <MenuList className={'rowMenuList'}>
               <MenuGroup>
                 <div className={'menuGroup'}>BOOTCAMP</div>
-                <MenuItem className={'menuItem'}>Fullstack Mobile</MenuItem>
-                <MenuItem className={'menuItem'}>Fullstack Website</MenuItem>
-                <MenuItem className={'menuItem'}>Backend Javaspring</MenuItem>
-                <MenuItem className={'menuItem'}>Backend Golang</MenuItem>
+                <MenuItem className={'menuItem'}>
+                  <Link to ='/class-detail'>
+                  Fullstack Mobile
+                  </Link>
+                </MenuItem>
+                <MenuItem className={'menuItem'}>
+                  <Link to ='/class-detail'>
+                  Fullstack Website
+                  </Link>
+                </MenuItem>
+                <MenuItem className={'menuItem'}>
+                  <Link to ='/class-detail'>
+                  Backend Javaspring
+                  </Link>
+                </MenuItem>
+                <MenuItem className={'menuItem'}>
+                  <Link to ='/class-detail'>
+                  Backend Golang
+                  </Link>
+                </MenuItem>
               </MenuGroup>
               <MenuGroup>
                 <div className={'menuGroup'}>MINI BOOTCAMP</div>
@@ -50,7 +66,11 @@ const Navbar = () => {
               </MenuGroup>
               <MenuGroup>
                 <div className={'menuGroup'}>VIDEO BELAJAR</div>
-                <MenuItem className={'menuItem'}>Lihat Semua <ArrowForwardIcon/> </MenuItem>
+                <MenuItem className={'menuItem'}>
+                  <Link to ='/modul-belajar'>
+                  Lihat Semua <ArrowForwardIcon/>
+                  </Link>
+                </MenuItem>
               </MenuGroup>
             </MenuList>
           </Menu>
