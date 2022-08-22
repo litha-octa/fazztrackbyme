@@ -8,8 +8,14 @@ const Navbar = () => {
   return(
     <>
       <nav className='shadow'>
+        <Link to ='/'>
         <img src={logoFazz} alt={'fazztrack logo'} className={'logoNav'}/>
-        <div className={'menuNav'}>Kelas</div>
+        </Link>
+        <div className={'menuNav'}>
+          <Link to = '/minicamp'>
+          Kelas
+          </Link>
+          </div>
         <div className={'menuNav'}>Dukungan</div>
         <div className={'menuNav'}>Tentang</div>
         <div className={'menuNav'}>Hire Our Graduates</div>
