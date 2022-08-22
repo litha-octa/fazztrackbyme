@@ -1,24 +1,93 @@
 import React from 'react'
 import { logoFazz } from '../../asset/image';
 import './styleNav.css'
-import { Button } from '@chakra-ui/react';
+import {
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+} from '@chakra-ui/react'
+import {
+  ChevronDownIcon,
+  ArrowForwardIcon,
+} from '@chakra-ui/icons'
 import {Link} from "react-router-dom";
 
 const Navbar = () => {
   return(
     <>
       <nav className='shadow'>
-        <Link to ='/'>
-        <img src={logoFazz} alt={'fazztrack logo'} className={'logoNav'}/>
+        <Link to ='/'  className={'logoNav'}>
+        <img src={logoFazz} alt={'fazztrack logo'}/>
         </Link>
-        <div className={'menuNav'}>
-          <Link to = '/minicamp'>
-          Kelas
-          </Link>
-          </div>
-        <div className={'menuNav'}>Dukungan</div>
-        <div className={'menuNav'}>Tentang</div>
-        <div className={'menuNav'}>Hire Our Graduates</div>
+          <Menu>
+            <MenuButton className={'menuButton'}>
+              Kelas <ChevronDownIcon />
+            </MenuButton>
+            <MenuList className={'rowMenuList'}>
+              <MenuGroup>
+                <div className={'menuGroup'}>BOOTCAMP</div>
+                <MenuItem className={'menuItem'}>Fullstack Mobile</MenuItem>
+                <MenuItem className={'menuItem'}>Fullstack Website</MenuItem>
+                <MenuItem className={'menuItem'}>Backend Javaspring</MenuItem>
+                <MenuItem className={'menuItem'}>Backend Golang</MenuItem>
+              </MenuGroup>
+              <MenuGroup>
+                <div className={'menuGroup'}>MINI BOOTCAMP</div>
+                <MenuItem className={'menuItem'}>Digital Marketing</MenuItem>
+                <MenuItem className={'menuItem'}>Cyber Security (Hacker/Bug Bounty)</MenuItem>
+                <MenuItem className={'menuItem'}>QA Automation Engineer</MenuItem>
+                <MenuItem className={'menuItem'}>
+                  <Link to ='/minicamp'>
+                  Lihat Semua <ArrowForwardIcon/>
+                  </Link>
+                  </MenuItem>
+              </MenuGroup>
+              <MenuGroup>
+                <div className={'menuGroup'}>VIDEO BELAJAR</div>
+                <MenuItem className={'menuItem'}>Lihat Semua <ArrowForwardIcon/> </MenuItem>
+              </MenuGroup>
+            </MenuList>
+          </Menu>
+
+        <Menu>
+          <MenuButton className={'menuButton'}>
+            Dukungan <ChevronDownIcon />
+          </MenuButton>
+          <MenuList>
+              <MenuItem className={'menuItem'}>Cicil Setelah Kerja (ISA)</MenuItem>
+              <MenuItem className={'menuItem'}>Career Ready</MenuItem>
+              <MenuItem className={'menuItem'}>FAQ</MenuItem>
+          </MenuList>
+        </Menu>
+
+        <Menu>
+          <MenuButton className={'menuButton'}>
+            Tentang <ChevronDownIcon />
+          </MenuButton>
+          <MenuList className={'rowMenuList'}>
+            <MenuGroup>
+            <div className={'menuGroup'}>ALUMNI</div>
+            <MenuItem className={'menuItem'}>Cerita Alumni</MenuItem>
+            </MenuGroup>
+            <MenuGroup>
+              <div className={'menuGroup'}>FAZZTRACK</div>
+            <MenuItem className={'menuItem'}>Sekilas Fazztrack</MenuItem>
+            </MenuGroup>
+          </MenuList>
+        </Menu>
+
+        <Menu>
+          <MenuButton className={'menuButton'}>
+            Hire Our Graduates
+          </MenuButton>
+        </Menu>
+
         <div  className={'btnNavContainer'}>
           <Link to={'/Login'}>
         <Button colorScheme='gray' variant='outline' className={'btnNav'}>Masuk</Button>

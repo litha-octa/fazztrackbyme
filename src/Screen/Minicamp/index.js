@@ -2,14 +2,14 @@ import React, {useEffect, useState} from 'react'
 import Navbar from "../../component/Navbar";
 import './style.css'
 import axios from 'axios'
-import {BaseUrl} from "../../component/baseUrl";
+import {BaseUrl, CorsUrl} from "../../component/baseUrl";
 
 const Minicamp = () =>{
     const [miniclassList, setMiniclassList] = useState([]);
     useEffect(()=>{
-        const url = `https://fazz-course.herokuapp.com/miniclass`
+        const url = `${BaseUrl}/miniclass`
         axios
-        .get(`https://cors-anywhere.herokuapp.com/${url}`,
+        .get(`${CorsUrl}/${url}`,
         {
             headers: {
                 'Access-Control-Allow-Origin': "*",
