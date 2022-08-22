@@ -1,0 +1,1 @@
+export const BaseUrl = 'https://fazz-course.herokuapp.com'

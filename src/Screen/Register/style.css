@@ -1,0 +1,28 @@
+.checkbox{
+    font-size: 3vw;
+}
+.blueText{
+    color:#2557A7;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 0 5;
+    cursor:pointer;
+}
+@media only screen and (max-width: 768px) {
+    .checkbox{
+        font-size: 2vw;
+    }
+    .blueText{
+        font-size: 2vw;
+        margin:5px 0 0  5px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .checkbox{
+        font-size: 3vw;
+    }
+    .blueText{
+        font-size: 3vw;
+        margin:5px 0 0  5px;
+    }
+}

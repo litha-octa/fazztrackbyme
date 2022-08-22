@@ -1,0 +1,127 @@
+*{margin:0}
+.bodyLogin{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: white;
+}
+.container{
+    width: 48%;
+    height: 80%;
+    margin:5% 0 0 27%;
+    align-content: center;
+    border-style:solid;
+    border-color:lightgrey;
+    border-width:unset;
+    border-radius: 5px;
+    padding : 3%;
+}
+.logo{
+    margin: 2% 0 3% 40%;
+    width: 18%;
+}
+.welcome{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #1F2A36;
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    text-align: center;
+    color: #46505c;
+    padding-left: 25%;
+    margin-bottom: 7%;
+}
+.orangeText{
+    color:orange;
+    cursor: pointer;
+}
+.tinyStar{
+    width: 7px;
+    height: 7px;
+    margin: 5px 5px 0 0;
+}
+.fieldName{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-size: 1em;
+    color:#46505c;
+    margin:2% 0;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    text-align: center;
+    color: #46505c;
+    margin: 5% 0;
+}
+.newPass{
+    margin-left: 53%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.altLogin{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    margin: 3% 0 ;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+        height: 80%;
+        margin:5% 0 0 10%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .logo{
+        margin: 2% 0 3% 30%;
+        width: 35%;
+    }
+    .row{
+        padding-left: 10%;
+    }
+    .checkbox{
+        font-size: 4vw;
+    }
+    .newPass{
+        margin-left: 20%;
+        font-size: 3vw;
+    }
+    .btn{
+        width: 100%;
+        margin-left: 0%;
+    }
+    }
+@media only screen and (max-width: 320px) {
+    .logo{
+        margin: 2% 0 3% 27%;
+        width: 40%;
+    }
+    .row{
+        font-size: 3.7vw;
+        padding-left: 0%;
+    }
+    .checkbox{
+        font-size: 4vw;
+    }
+    .newPass{
+        margin-left: 20%;
+        font-size: 3vw;
+    }
+    .btn{
+        width: 100%;
+        margin-left: 0%;
+        font-size: 3vw;
+
+    }
+}
+

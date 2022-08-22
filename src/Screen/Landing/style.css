@@ -1,0 +1,142 @@
+*{margin: 0;}
+.body{
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+.section1{
+    width:100%;
+    height: 650px;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: row;
+}
+.section1-left{
+    width:50%;
+}
+.section1-right{
+    width:50%;
+    background-color: #46505c;
+}
+.caption-sec-1{
+    margin-top:10%;
+    font-size: 4em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color:#1F2A36;
+       /*color:red;*/
+}
+.description-sec-1{
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color:#46505c;
+}
+.btnOrange{
+    margin-top: 20px;
+    padding : 2px;
+    font-family: sans-serif;
+    position: absolute;
+}
+.partnerSection{
+    background-color:#F3F4F5;
+    height : auto;
+    width: 100%;
+    padding: 2% 0;
+    align-items: center;
+}
+.styleCapSec2{
+    font-family: sans-serif;
+    font-weight:500;
+    font-size: 1.3rem;
+    color:#1F2A36;
+    text-align: center;
+}
+.styleDescSec2{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    color:#46505c;
+    text-align: center;
+}
+.imgContainer{
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-left: 6%;
+    margin: 4% 0 2% 0;
+}
+.imgItem{
+    display: inline-grid;
+    align-self: center;
+    width: 150px;
+    height: 100px;
+}
+.img{
+    margin: 5% 0 0 0%;
+    width: 120px;
+}
+.sectionPadding{
+    width: 100%;
+    height: auto;
+    padding: 4% 5% 0 5%;
+    background-color: white;
+}
+.benefitSection{
+    background-color: #1C417D;
+    width: 100%;
+    height: auto;
+    padding: 4% 5% 0 5%;
+}
+
+@media only screen and (max-width: 768px){
+.section1{
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.section1-left{
+    width: 100%;
+}
+.section1-right{
+    width:100%;
+    height: 600px;
+    background-color: #46505c;
+}
+    .caption-sec-1{
+        font-size: 3.1em;
+        text-align: center;
+    }
+    .description-sec-1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .btnOrange{
+        align-self: center;
+    }
+    .partnerSection{
+        padding: 8% 5%;
+    }
+    .styleCapSec2{
+        font-size: 1.4rem;
+    }
+    .styleDescSec2{
+        font-size: 1.3rem;
+    }
+    .imgItem{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .img{
+        margin: 5% 0 0 0%;
+        width: 35%;
+    }
+    .sectionPadding{
+        padding: 4% 5% 0 5%;
+    }
+    .benefitSection{
+        padding: 4% 5% 0 5%;
+    }
+
+}

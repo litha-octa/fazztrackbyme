@@ -1,0 +1,50 @@
+.captionAlumniStory{
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin : 5% 0 0 0;
+}
+.descAlumniStory{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin : 0% 2% ;
+}
+.cardStoryContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.itemCardStory{
+    width: 30%;
+    justify-content: space-around;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    background-color: white;
+    border: 5px;
+}
+.cardTitle{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 5% 3%;
+}
+.cardStory{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 5% 3%;
+}
+.img{
+
+}
+@media only screen and (max-width: 768px) {
+    .cardStoryContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .itemCardStory{
+        width: 100%;
+        margin: 2%;
+        padding-bottom:5%;
+    }
+}
