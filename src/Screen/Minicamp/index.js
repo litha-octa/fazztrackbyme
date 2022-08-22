@@ -11,7 +11,7 @@ const Minicamp = () =>{
         .get(`https://fazz-course.herokuapp.com/miniclass`,
         {
             headers: {
-                'Access-Control-Allow-Origin': true,
+                'Access-Control-Allow-Origin': "*",
             },
         }
             .then((res) => {
