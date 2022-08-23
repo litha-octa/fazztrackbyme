@@ -1,0 +1,81 @@
+*{margin:0}
+.bodyModule{
+    width: 100%;
+    height: auto;
+    padding:5% 0 0 0 ;
+    background-color: white;
+
+}
+.titleModule{
+    width: 100%;
+    height:auto;
+    background-color: white;
+    padding: 2% 5%;
+
+}
+.moduleContainer{
+    width: 100%;
+    height: auto;
+    padding: 2% 5%;
+    background-color: #F1F6FE;
+}
+.cardModule{
+    display: inline-grid;
+    width: 23%;
+    height: auto;
+    margin: 2% 1%;
+    padding: 0 0 3% 0;
+    background-color: white;
+}
+.cardModuleTitle{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#1F2A36 ;
+    height: 3em;
+    margin:5%;
+}
+.cardModuleDesc{
+    font-family: sans-serif;
+    margin:0 5% 2% 5%;
+    font-size: 1em;
+    color: #46505C;
+    cursor: pointer;
+}
+.rowModule{
+    margin:2% 5%;
+    display: flex;
+    flex-direction: row;
+}
+.lineModule{
+    background-color: rgba(70, 80, 92, 0.43);
+    height: 2px;
+    width: 90%;
+    margin:4% 5%;
+}
+.hargaModule{
+    color: #46505C;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+.itemPrice{
+    color:#EF6807;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 7.5vw;
+}
+@media only screen and (max-width: 768px) {
+    .cardModule{
+        width: 45%;
+        margin: 3% 2%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .cardModule{
+        width: 95%;
+        margin: 4% 2%;
+    }
+}

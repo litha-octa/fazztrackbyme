@@ -67,7 +67,7 @@ const Navbar = () => {
               <MenuGroup>
                 <div className={'menuGroup'}>VIDEO BELAJAR</div>
                 <MenuItem className={'menuItem'}>
-                  <Link to ='/modul-belajar'>
+                  <Link to ='/module-belajar'>
                   Lihat Semua <ArrowForwardIcon/>
                   </Link>
                 </MenuItem>
