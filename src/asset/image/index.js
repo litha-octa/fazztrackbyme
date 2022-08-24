@@ -30,6 +30,8 @@ export const imgGroup =
     {url : 'https://fazztrack.com/_nuxt/img/kontrakhukum.88f8b29.png'},
   ]
 export const logoIg = 'https://fazztrack.com/_nuxt/img/Instagram.589cb8a.png'
+export const dot = 'https://www.clker.com/cliparts/m/I/n/1/T/P/orange-dot-md.png'
+export const imgClassDetail = 'https://fazztrack.com/_nuxt/img/bootcamp-class.136b265.png'
 
 export {
     logoFazz,
