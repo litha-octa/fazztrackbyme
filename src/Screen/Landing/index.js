@@ -10,6 +10,7 @@ import Navbar from '../../component/Navbar';
 import Benefit from '../../component/Benefit';
 import CeritaAlumni from '../../component/CeritaAlumni';
 import FAQ from '../../component/FAQ';
+import Footer from "../../component/Footer";
 
 
 function Landing() {
@@ -65,6 +66,7 @@ function Landing() {
         <div className={'sectionPadding'}>
           <FAQ />
         </div>
+          <Footer/>
       </Box>
   );
 }

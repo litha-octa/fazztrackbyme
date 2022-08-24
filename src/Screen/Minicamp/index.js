@@ -3,6 +3,7 @@ import Navbar from "../../component/Navbar";
 import './style.css'
 import axios from 'axios'
 import {BaseUrl, CorsUrl} from "../../component/baseUrl";
+import Footer from "../../component/Footer";
 
 const Minicamp = () =>{
     const [miniclassList, setMiniclassList] = useState([]);
@@ -60,6 +61,7 @@ const Minicamp = () =>{
                 })}
             </div>
                 </div>
+            <Footer/>
         </>
     )
 }

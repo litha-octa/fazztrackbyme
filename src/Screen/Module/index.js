@@ -8,6 +8,7 @@ import {Input} from "@chakra-ui/react";
 import axios from "axios";
 
 import './style.css'
+import Footer from "../../component/Footer";
 
 
 
@@ -61,6 +62,9 @@ const Module = () => {
                     </div>
                 )
             }))}
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
         </>
