@@ -1,12 +1,12 @@
 import {Button, Text} from '@chakra-ui/react'
 
-function Btn({disabled, bg ,onClick, label: LabelNya, type, px, iconL, iconR, color, ...props}) {
+function Btn({disabled, bg ,onClick, label: LabelNya, type, px, iconL, iconR, color, variant,  ...props}) {
     const labelIsString = typeof LabelNya === 'string'
     return (
         <Button
             {...props}
             disabled={disabled}
-            type={type}
+            type={!type?'solid':variant}
             colorScheme={bg}
             leftIcon={iconL}
             rightIcon={iconR}

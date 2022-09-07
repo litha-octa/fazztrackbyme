@@ -41,7 +41,7 @@ const Minicamp = () =>{
                             <div className={'miniclassTitle'}>{item.title}</div>
                             <div className={'miniclassDesc'}>{item.description}</div>
                             <div className={'date'}>{item.date}</div>
-                            <div className={'line'}>__________________________________</div>
+                            <div className={'line'}></div>
                             <div className={'rowSection'}>
                                 <div><img src={item.trainerProfilePicture} alt='trainerPic' className={'trainerPic'}/> </div>
                                 <div>
@@ -49,12 +49,12 @@ const Minicamp = () =>{
                                     <div className={'trainerTitle'}>{item.trainerTitle}</div>
                                 </div>
                             </div>
-                            <div className={'line'}>__________________________________</div>
+                            <div className={'line'}></div>
                             <div className={'rowSection'}>
                                 <div className={'price'}>Harga Mini Bootcamp</div>
                                 <div className={'priceItem'}>{`Rp${item.price}`}</div>
                             </div>
-                            <div className={'line'}>__________________________________</div>
+                            <div className={'line'}></div>
                             <div className={'linkDaftar'}>Daftar Sekarang ---></div>
                         </div>
                     )

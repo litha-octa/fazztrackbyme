@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     padding:6% 0 0 0 ;
+    background-color: white;
 }
 .titleMinicamp{
     width: 100%;
@@ -13,19 +14,19 @@
     padding: 0% 5%;
 }
 .minicampContainer{
-    background-color: #F3F4F5;
     width: 100%;
     height: auto;
     padding: 1% 5%;
 }
 .cardMiniclass{
     display: inline-grid;
-    background-color: white;
     width: 30%;
     height: auto;
     padding : 1% 3%;
     margin : 1%;
     cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.49);
+    border-radius: 5px;
 }
 .rowSection{
     display: flex;
@@ -76,13 +77,11 @@
     font-size: 0.9em;
     color: #1F2A36;
 text-transform: uppercase;
-    margin-bottom: 3%;
+    height: 3vw;
 }
 .line{
-    font-size: 18px;
-    font-weight: bolder;
-    color: rgba(70, 80, 92, 0.3);
-    margin-bottom: 2%;
+    margin: 2.5% 0;
+    background-color: rgba(70, 80, 92, 0.3);
 }
 .trainerPic{
     width: 50px;
@@ -114,7 +113,7 @@ text-transform: uppercase;
     font-size: 14px;
     font-family: sans-serif;
     font-weight: bold;
-    margin-left: 30%;
+    margin-left: 27%;
 }
 .linkDaftar{
     text-align: center;

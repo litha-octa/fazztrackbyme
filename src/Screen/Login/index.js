@@ -31,28 +31,30 @@ function Login() {
            <Input placeholder='Masukkan kata sandi'  type='password' size='md' variant='outline'/>
            <div className={'row2'}>
 
-           <Checkbox colorScheme='blue' iconColor='white.400' defaultChecked>
                <div className={'checkbox'}>
+           <Checkbox colorScheme='blue' iconColor='white.400' defaultChecked>
                Ingat akun saya
-               </div>
            </Checkbox>
+               </div>
            <div className={'newPass'}>Lupa Password</div>
            </div>
+           <div className={'btn'}>
            <Btn
            label={'Masuk'}
            px="47%"
            bg={'orange'}
-           className={'btn'}
            />
+           </div>
            <div className={'altLogin'}>Atau masuk Menggunakan</div>
+           <div className={'btn'}>
            <Btn
                label={'Google'}
                iconL={<Google />}
                px="46%"
-               bg='gray'
                color={'black'}
-               className={'btn'}
+               type={'outline'}
            />
+       </div>
        </div>
 
    </div>
